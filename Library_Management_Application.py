@@ -1,4 +1,4 @@
-#################        IMPORTING THE REQUIRED LIBRARIES          ################
+#################        IMPORTING THE LIBRARIES          ################
 
 
 
@@ -16,4 +16,23 @@ from twilio.rest import Client
 
 
 
+
+###########################################################################################
+
+
+
+##################                       MAIN WINDOW                         ##############
+
+
+root = tk.Tk()
+root.title('UEL Library')
+root.geometry('1000x650')
+root.resizable(0,0)
+root.rowconfigure(0,weight=1)
+root.columnconfigure(0,weight=1)
+
+
+
+
+root.mainloop()
 
