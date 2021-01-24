@@ -76,7 +76,7 @@ def Frame2():
 def Frame1():
     show_frame(frame1)
     Label(frame1, text = 'Login as Admin : ', font = ('times',20,'bold italic'),bg='#E0FFFF').place(x=530,y=170)
-    Button(frame1, text = 'Sign In',bg='#E0FFFF',font = ('times',15,'bold italic')).place(x=800,y=170)
+    Button(frame1, text = 'Sign In', bg='#E0FFFF',font = ('times',15,'bold italic')).place(x=800,y=170)
 
     Label(frame1, text = 'Login as Student : ', font = ('times',20,'bold italic'),bg='#E0FFFF').place(x=530,y=270)
     Button(frame1, text = 'Sign In',bg='#E0FFFF',font = ('times',15,'bold italic')).place(x=800,y=270)
@@ -84,7 +84,7 @@ def Frame1():
     Label(frame1,text = 'Have  to Register?',font = ('times',20,'bold italic'),bg='#E0FFFF').place(x=530,y=370)
     Button(frame1, text = 'Sign Up',font = ('times',15,'bold italic'),bg='#E0FFFF').place(x=800,y=370)
 
-    Button(frame1, text = 'Exit',bg='#E0FFFF',font = ('times',15,'bold italic')).place(x=700,y=450)
+    Button(frame1, text = 'Exit',command = close, bg='#E0FFFF',font = ('times',15,'bold italic')).place(x=700,y=450)
 
 
 
