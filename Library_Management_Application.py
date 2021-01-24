@@ -76,10 +76,10 @@ def Frame2():
 def Frame1():
     show_frame(frame1)
     Label(frame1, text = 'Login as Admin : ', font = ('times',20,'bold italic'),bg='#E0FFFF').place(x=530,y=170)
-    Button(frame1, text = 'Sign In', bg='#E0FFFF',font = ('times',15,'bold italic')).place(x=800,y=170)
+    Button(frame1, text = 'Sign In',command = Frame2, bg='#E0FFFF',font = ('times',15,'bold italic')).place(x=800,y=170)
 
     Label(frame1, text = 'Login as Student : ', font = ('times',20,'bold italic'),bg='#E0FFFF').place(x=530,y=270)
-    Button(frame1, text = 'Sign In',bg='#E0FFFF',font = ('times',15,'bold italic')).place(x=800,y=270)
+    Button(frame1, text = 'Sign In', bg='#E0FFFF',font = ('times',15,'bold italic')).place(x=800,y=270)
 
     Label(frame1,text = 'Have  to Register?',font = ('times',20,'bold italic'),bg='#E0FFFF').place(x=530,y=370)
     Button(frame1, text = 'Sign Up',font = ('times',15,'bold italic'),bg='#E0FFFF').place(x=800,y=370)
@@ -123,8 +123,12 @@ root.columnconfigure(0,weight=1)
 
 
 frame1 = Frame(root)
+frame2 = Frame(root)
+frame2a = Frame(root)
 
 frame1.place(relheight=1,relwidth=1)
+frame2.place(relheight=1,relwidth=1)
+
 
 
 Frame1()                   # Running first frame
