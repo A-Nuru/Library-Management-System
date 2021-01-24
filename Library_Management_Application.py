@@ -19,7 +19,28 @@ from twilio.rest import Client
 
 
 
+  
 
+##################                          FRAME-2A  (STUDENT LOGIN PAGE)                      ##############
+
+
+def Frame2a():
+    show_frame(frame2a)
+
+    global name_entry
+    global password_entry
+
+    Label(frame2a, text = 'Username : ',font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=50,y=170)
+    Label(frame2a, text = 'Password : ',font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=50,y=240)
+
+    name_entry=StringVar()
+    Entry(frame2a,textvariable=name_entry).place(x=170,y=170)
+
+    password_entry=StringVar()
+    Entry(frame2a,textvariable=password_entry, show = '*').place(x=170,y=240)
+    
+    Button(frame2a, text = 'Sign In',font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=120,y=320)
+    Button(frame2a, text = 'Go Back',font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=120,y=380)
 
 
 
