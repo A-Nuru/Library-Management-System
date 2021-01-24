@@ -44,6 +44,15 @@ def Frame1():
 
 def close():
     root.destroy()
+
+
+
+##################              FUNCTION TO RAISE DESIRED FRAMES             ##############
+
+     
+def show_frame(frame):
+    frame.tkraise()
+
     
 
 
