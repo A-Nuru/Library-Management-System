@@ -126,9 +126,8 @@ frame1 = Frame(root)
 frame2 = Frame(root)
 frame2a = Frame(root)
 
-frame1.place(relheight=1,relwidth=1)
-frame2.place(relheight=1,relwidth=1)
-frame2a.place(relheight=1,relwidth=1)
+for frame in (frame1,frame2,frame2a):
+    frame.place(relheight=1,relwidth=1)
 
 
 
