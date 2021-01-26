@@ -45,4 +45,8 @@ This Library Management System (LMS) Software is a new system designed to bring 
 
 The Context Diagram defines the interfaces between the internal and external systems. It is made up of the internal system – the Library Management System interacting with the external systems – the Actors, which include the Users, Administrators, Book and Catalogue. The Users interact with the Library Management System physically using the Screen and Keyboard and logically, using the GUI. Similarly, the Administrators interact with the Library Management System physically using the Screen and Keyboard and logically, using the GUI. Additionally, The Book interact with the Library Management System physically using the laser beam, and logically, using the barcode.
 
+![context diagram](https://user-images.githubusercontent.com/45924101/105904998-d17cd480-6019-11eb-944e-31639c1543b4.PNG)
+### Figure 1: The Context Diagram showing the interfaces between the internal and external systems in the Library Management System Software.
+
+
  
