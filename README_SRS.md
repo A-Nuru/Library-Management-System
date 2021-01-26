@@ -25,3 +25,11 @@ The intended audience for this document are library staff, students, developers 
 is based on the overall description, functional and non-functional requirements, user stories and test plan of the project. 
 The ‘Table of contents’ at the beginning can be referred to navigate to the desired part of this document.
 
+### 1.4	Product Scope
+The ‘Library Management System’ is a GUI application that is developed using Python programming language. It has complete information of the library in a central database. It consists of the following features.
+-	Safety – Both the Admin and the users have to login with proper authorization (username and password).
+-	The users has to first register on the application before borrowing a book.
+-	The users can check their records and available books along with their location.
+-	The admin can add, remove, issue and return the book.
+-	Reminding the user about the return date.
+-	Calculates fine for late submission of books.
