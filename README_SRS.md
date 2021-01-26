@@ -12,3 +12,9 @@ The key purpose of this project is to eliminate the paper work required to maint
 This application makes it easy for all the users to search for the available books along with their precise location inside the 
 library. It makes the process of issuing and returning a book easy and quick.
 
+### 1.2	Document Conventions
+- Admin	- The librarian
+- User	- Person borrowing a book
+- DB	- Database
+- Sqlite3	- Relational database
+- LMS	- Library Management System
