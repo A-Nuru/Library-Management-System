@@ -34,6 +34,12 @@ The ‘Library Management System’ is a GUI application that is developed using
 -	Reminding the user about the return date.
 -	Calculates fine for late submission of books.
 
+### 1.5	References
+* [Python tkinter](https://docs.python.org/3/library/tkinter.html)
+* [Python Sqlite3](https://docs.python.org/3/library/sqlite3.html)
+#### Other references:
+- [educative.io](https://www.educative.io/courses/grokking-the-object-oriented-design-interview/RMlM3NgjAyR)
+- [wordpress preplibs](https://preplibs.wordpress.com/library-management-systems/)
 
 
 
