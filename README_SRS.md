@@ -18,3 +18,10 @@ library. It makes the process of issuing and returning a book easy and quick.
 - DB	- Database
 - Sqlite3	- Relational database
 - LMS	- Library Management System
+
+
+### 1.3	Intended Audience and Reading Suggestions
+The intended audience for this document are library staff, students, developers and documentation writers. The further explanation
+is based on the overall description, functional and non-functional requirements, user stories and test plan of the project. 
+The ‘Table of contents’ at the beginning can be referred to navigate to the desired part of this document.
+
