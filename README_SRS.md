@@ -117,3 +117,15 @@ Administrators – The library staffs could be:
 -	4GB Ram or higher
 -	1.2 GHz processor or higher
 
+
+
+### 2.5	Design and Implementation Constraints
+-	The LMS software should be written in English because it is the language the users understand.
+-	Easy to use system design so that the users of the software can adapt quickly to it.
+-	The LMS software must be secured and safe enough so that the library services are not redirected.
+-	Book update must be recorded to have updated & correct values.
+-	Member update must be recorded to have updated & correct names.
+-	Members should be notified of accurately calculated fines as soon as possible
+
+
+
