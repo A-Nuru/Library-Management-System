@@ -127,5 +127,7 @@ Administrators – The library staffs could be:
 -	Member update must be recorded to have updated & correct names.
 -	Members should be notified of accurately calculated fines as soon as possible
 
+### 2.6	User Documentation
+A procedural guide will be associated with the Library Management software to guide new users, especially the administrators how to use the software. This will teach new users the best guideline practices and the most effective commands. This will include a user manual in text format and videos describing how to use the GUI.
 
 
