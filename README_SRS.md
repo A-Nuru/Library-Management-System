@@ -106,4 +106,14 @@ Administrators – The library staffs could be:
 -	DB administrator - Manages DBMSs on which applications are based
 -	Buyer - CEO and/or CTO or CIO of library
 
+### 2.4	Operating Environment
+#### 2.4.1 Software Requirement
+-	Python IDE
+-	Windows 7 or higher
+-	Sqlite3
+
+#### 2.4.2 Hardware Requirement
+-	Minimum Intel i3
+-	4GB Ram or higher
+-	1.2 GHz processor or higher
 
