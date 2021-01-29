@@ -63,5 +63,27 @@ The class diagram shows the classes in the system and their associations. The cl
 ### Figure 2: The class diagram showing the classes in the Library Management System and their interactions.
 
 
+### 2.2	Product Functions and Use Cases
+The Library Management System Software will allow the following users to perform the functions below as also represented in the use case diagram showing what the system.
+
+Users will be able to do the following:
+-	Register
+-	Login
+-	Check available books
+-	Check their records
+-	Check fine
+-	Logout
+
+Administrator – The library staffs will be able to do the following:
+-	Login
+-	Add/update members
+-	Add/update books 
+-	Issue books to the members 
+-	Maintain member’s records 
+-	Check available books
+-	Check user records
+-	Manage return
+-	Send reminders
+-	Issue fine
 
 
