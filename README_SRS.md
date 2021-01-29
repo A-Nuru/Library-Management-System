@@ -55,4 +55,13 @@ The Context Diagram defines the interfaces between the internal and external sys
 ### Figure 1: The Context Diagram showing the interfaces between the internal and external systems in the Library Management System Software.
 
 
- 
+ ### Class Diagram 
+
+The class diagram shows the classes in the system and their associations. The classes include Library, Book, Library Member, Users and Administrators classes. The Library class is composed of the Book class and a library can have one or more books. Furthermore, the Library Member class is a part of the Library class and a library can have one or more Library member. Additionally, The Library Member class generalizes the Users and Administrator classes.
+
+![class diagram](https://user-images.githubusercontent.com/45924101/106309367-e778d800-6259-11eb-857e-9a364373431f.PNG)
+### Figure 2: The class diagram showing the classes in the Library Management System and their interactions.
+
+
+
+
