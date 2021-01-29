@@ -86,4 +86,5 @@ Administrator – The library staffs will be able to do the following:
 -	Send reminders
 -	Issue fine
 
-
+![use case diagram](https://user-images.githubusercontent.com/45924101/106310562-a5e92c80-625b-11eb-81b7-01cf8b5b73d4.PNG)
+Figure 3: A use case diagram illustrating the work of Library Management System.
