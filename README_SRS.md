@@ -88,3 +88,22 @@ Administrator – The library staffs will be able to do the following:
 
 ![use case diagram](https://user-images.githubusercontent.com/45924101/106310562-a5e92c80-625b-11eb-81b7-01cf8b5b73d4.PNG)
 Figure 3: A use case diagram illustrating the work of Library Management System.
+
+### 2.3	User and Stakeholders
+The stakeholders of the LMS software are categorized as 
+
+Users which could be:
+-	Students
+-	Teachers
+-	Professors 
+-	Workers 
+-	Library workers 
+
+Administrators – The library staffs could be:
+-	Library Management System application administrator
+-	IT administrator - Manages all applications in the Library
+-	Security manager - Responsible for security issues
+-	DB administrator - Manages DBMSs on which applications are based
+-	Buyer - CEO and/or CTO or CIO of library
+
+
