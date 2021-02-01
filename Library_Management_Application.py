@@ -19,6 +19,34 @@ from twilio.rest import Client
 
 
 
+
+##################          ADMIN LOGIN DATABASE              ##############
+
+
+
+
+
+def login():
+    name = name_entry.get()
+    password = password_entry.get()
+
+    conn = sqlite3.connect('Admin.db')
+    cursor = conn.cursor()
+    cursor.execute('select username, password from login')
+    k = []
+    for row in cursor:
+        if row[0] == name and row[1] == password:
+            k.append(row[0])
+            k.append(row[1])
+
+    if len(k) == 2:
+        Frame3()
+        k.clear()
+    else:
+        messagebox.showinfo('Error','Username or Password Incorrect')
+
+
+
   
 
 ##################                          FRAME-2A  (STUDENT LOGIN PAGE)                      ##############
@@ -64,7 +92,7 @@ def Frame2():
     password_entry=StringVar()
     Entry(frame2,textvariable=password_entry, show = '*').place(x=170,y=240)
     
-    Button(frame2, text = 'Sign In',font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=120,y=320)
+    Button(frame2, text = 'Sign In',command = admin_Database ,font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=120,y=320)
     Button(frame2, text = 'Go Back',command = Frame1,font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=120,y=380)
 
 
