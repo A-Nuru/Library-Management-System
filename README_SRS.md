@@ -130,4 +130,14 @@ Administrators – The library staffs could be:
 ### 2.6	User Documentation
 A procedural guide will be associated with the Library Management software to guide new users, especially the administrators how to use the software. This will teach new users the best guideline practices and the most effective commands. This will include a user manual in text format and videos describing how to use the GUI.
 
+### 2.7	Assumptions and Dependencies
+The LMS software is dependent on the latest version of following libraries
+-	Tkinter
+-	Sqlite3
+-	Pillow
+-	Twilio
+
+The LMS software is assumed to be used on a computer with enough performance ability, with an up-to-date internet browser. The LMS software might not work as intended if the computer does not have enough performance to support its backend, which may lead to performance and usability issues for the user. The user is also assumed to complete a training session by going through the manual and video associated with the software so as to be able to use it effectively and efficiently.
+
+
 
