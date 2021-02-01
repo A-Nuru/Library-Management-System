@@ -158,8 +158,15 @@ The minimum hardware requirement for this project are described below.
 -	Ram: 4 Gigabytes
 -	Storage: 10 Gigabytes
 
-3.3	Software Interfaces
+### 3.3	Software Interfaces
 This application is developed using Python programming language and Sqlite3 database is used to store its data.
 
 -	Operating System: Windows 7 or higher/ MAC/ UNIX
 -	Python Idle
+
+### 3.4	Communications Interfaces
+Twilio – It is a cloud communication platform, which allows software developers to programmatically send/receive SMS using its web APIs. To install Twilio library in Python application, we can use the pip method as follows.
+- pip install twilio
+To use twilio SMS communication in the program, we have to first signup on twilio.com and it will provide us the trial number and account details (Account Sid, Authorization Token). These details are used inside the code to send free SMS.
+
+
