@@ -33,7 +33,7 @@ def student_Database():
     cursor0.execute("CREATE TABLE IF NOT EXISTS login (username TEXT , password TEXT, mobile_no TEXT)")
     conn0.commit()
 
-    
+    login_stu()
 
     
 
