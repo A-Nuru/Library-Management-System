@@ -52,7 +52,8 @@ def login():
             k.append(row[1])
 
     if len(k) == 2:
-        pass
+        Frame3()
+        k.clear()
     else:
         messagebox.showinfo('Error','Username or Password Incorrect')
 
@@ -70,7 +71,7 @@ def Frame3():
     Button(frame3, text = 'Add Members', font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=500,y=170)
     Button(frame3, text = 'Issue Book', font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=500,y=240)
     Button(frame3, text = 'Check Record', font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=500,y=310)
-    Button(frame3, text = 'Reminder', font = ('times',15,'bold italic'),bg='#FFFFFF', command = dates).place(x=500,y=370)
+    Button(frame3, text = 'Reminder', font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=500,y=370)
 
 
     Button(frame3, text = 'Logout', font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=500,y=450)
