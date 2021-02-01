@@ -35,6 +35,8 @@ def student_Database():
 
     
 
+    
+
 
 
 ##################          ADMIN LOGIN DATABASE              ##############
@@ -47,9 +49,36 @@ def admin_Database():
     cursor.execute('DELETE FROM login')
     cursor.execute("INSERT INTO login (username, password,mobile_no) VALUES('uellibrary', 'uel123',+447388397814)")
     conn.commit()
+    
     login()
 
 
+
+
+
+##################       STUDENT LOGIN AUTHORIZATION        ##############
+
+def login_stu():
+    global name, password
+    name = name_entry.get()
+    password = password_entry.get()
+
+    conn0 = sqlite3.connect('Student.db')
+    cursor0 = conn0.cursor()
+    cursor0.execute('select username, password from login')
+    k = []
+    for row in cursor0:
+        if row[0] == name and row[1] == password:
+            k.append(row[0])
+            k.append(row[1])
+
+    if len(k) == 2:
+        Frame9()
+        k.clear()
+    else:
+        messagebox.showinfo('Error','Username or Password Incorrect')
+
+        
     
 
 ##################        ADMIN LOGIN AUTHORIZATION         ##############
