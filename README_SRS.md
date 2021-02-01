@@ -158,3 +158,8 @@ The minimum hardware requirement for this project are described below.
 -	Ram: 4 Gigabytes
 -	Storage: 10 Gigabytes
 
+3.3	Software Interfaces
+This application is developed using Python programming language and Sqlite3 database is used to store its data.
+
+-	Operating System: Windows 7 or higher/ MAC/ UNIX
+-	Python Idle
