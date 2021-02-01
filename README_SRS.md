@@ -150,3 +150,11 @@ Admin Interface: In this interface, the administrator can add, issue, return and
 
 Search Interface: The user can search for the books by the book name/author/genre. If the searched item is available in records then it will get displayed. Linear search function is used for searching operation.
 
+
+### 3.2	Hardware Interfaces
+The minimum hardware requirement for this project are described below.
+
+-	Processor: Intel core i3
+-	Ram: 4 Gigabytes
+-	Storage: 10 Gigabytes
+
