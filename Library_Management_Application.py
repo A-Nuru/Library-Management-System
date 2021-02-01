@@ -105,6 +105,30 @@ def login():
 
 
 
+##################                          FRAME-5  (ADMIN REGISTERING NEW MEMBERS)                       ##############
+    
+def Frame5():
+    show_frame(frame5)
+    global stu_uname, stu_pw, stu_ph
+
+    Label(frame5,text = 'Username : ',font = ('times',15,'bold italic')).place(x=100,y=150)
+    stu_uname=StringVar()
+    Entry(frame5, textvariable = stu_uname).place(x=280,y=150)
+
+    Label(frame5,text = 'Password : ',font = ('times',15,'bold italic')).place(x=100,y=200)
+    stu_pw=StringVar()
+    Entry(frame5, textvariable = stu_pw).place(x=280,y=200)
+
+    Label(frame5,text = 'Phone number : ',font = ('times',15,'bold italic')).place(x=100,y=250)
+    stu_ph=StringVar()
+    Entry(frame5, textvariable = stu_ph).place(x=280,y=250)
+
+    Button(frame5, text = 'Submit',font = ('times',15,'bold italic')).place(x=300,y=300)
+
+    Button(frame5, text = 'Back', command = Frame3,font = ('times',15,'bold italic')).place(x=220,y=300)
+
+
+
 
 ##################                          FRAME-3  (ADMIN OPERATIONS)                       ##############
 
