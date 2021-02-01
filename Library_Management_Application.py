@@ -21,6 +21,22 @@ from twilio.rest import Client
 
 
 
+
+
+##################          STUDENT LOGIN DATABASE           ##############
+
+def student_Database():
+    global conn0, cursor0
+    
+    conn0 = sqlite3.connect("Student.db")
+    cursor0 = conn0.cursor()
+    cursor0.execute("CREATE TABLE IF NOT EXISTS login (username TEXT , password TEXT, mobile_no TEXT)")
+    conn0.commit()
+
+    
+
+
+
 ##################          ADMIN LOGIN DATABASE              ##############
 
 def admin_Database():
