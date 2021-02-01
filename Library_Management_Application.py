@@ -65,7 +65,7 @@ def Frame2():
     Entry(frame2,textvariable=password_entry, show = '*').place(x=170,y=240)
     
     Button(frame2, text = 'Sign In',font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=120,y=320)
-    Button(frame2, text = 'Go Back',font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=120,y=380)
+    Button(frame2, text = 'Go Back',command = Frame1,font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=120,y=380)
 
 
 
