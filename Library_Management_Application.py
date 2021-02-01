@@ -20,11 +20,23 @@ from twilio.rest import Client
 
 
 
+
 ##################          ADMIN LOGIN DATABASE              ##############
 
+def admin_Database():
+    global conn, cursor
+    conn = sqlite3.connect("Admin.db")
+    cursor = conn.cursor()
+    cursor.execute("CREATE TABLE IF NOT EXISTS login (username TEXT , password TEXT, mobile_no TEXT)")
+    cursor.execute('DELETE FROM login')
+    cursor.execute("INSERT INTO login (username, password,mobile_no) VALUES('uellibrary', 'uel123',+447388397814)")
+    conn.commit()
+    login()
 
 
+    
 
+##################        ADMIN LOGIN AUTHORIZATION         ##############
 
 def login():
     name = name_entry.get()
@@ -40,10 +52,15 @@ def login():
             k.append(row[1])
 
     if len(k) == 2:
-        Frame3()
-        k.clear()
+        pass
     else:
         messagebox.showinfo('Error','Username or Password Incorrect')
+
+
+
+
+
+
 
 
 
@@ -153,8 +170,9 @@ root.columnconfigure(0,weight=1)
 frame1 = Frame(root)
 frame2 = Frame(root)
 frame2a = Frame(root)
+frame3 = Frame(root)
 
-for frame in (frame1,frame2,frame2a):
+for frame in (frame1,frame2,frame2a, frame3):
     frame.place(relheight=1,relwidth=1)
 
 
