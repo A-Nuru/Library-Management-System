@@ -169,4 +169,34 @@ Twilio – It is a cloud communication platform, which allows software developer
 - pip install twilio
 To use twilio SMS communication in the program, we have to first signup on twilio.com and it will provide us the trial number and account details (Account Sid, Authorization Token). These details are used inside the code to send free SMS.
 
+## 4.	System Requirements
+
+### 4.1	Registration: F1
+#### 4.1.1	Description and Priority
+A person who wants to borrow a book from the library should register on the application by using the Sign up function. This is mandatory and has a very high priority because there must be record for each user of the LMS app and  the records will be stored in a central database. These user informations are highly important for users in order to have access to the library transactions, for instance, issuing a book.
+
+#### 4.1.2    Input/Outputs Sequences
+While signing up, the user have to add his UEL id as username, a strong password and his mobile number and then click on sign up button. If all the information is valid, then a message box pops up stating 'registration successful'. If the information is not valid or wrong or any entry fields are empty, then an error message pops out.
+
+#### 4.1.3	Functional Requirements
+- F1.1: Tkinter
+
+This is a Python library that helps in creating GUI application and is needed to run this software. A user can install the Tkinter library by using pip command and import the library in the program by using the code below.
+
+Installation: pip install Tkinter
+Importing: Import Tkinter as tk
+
+- F1.2: Sqlite3
+
+Sqlite3 is a database management system, which allows the application to securely store the user information inside a database. User can use pip command to install the sqlite3 library and import function to use the library.
+
+Installation: pip install sqlite
+Importing: Import sqlite3
+
+- F1.3: Tkinter Message Box
+
+Message Box is a part of Tkinter library which is used to convey an error or success information in a small box. User has to import this separately from Tkinter by using the below command
+
+Importing: from tkinter import messagebox
+	
 
