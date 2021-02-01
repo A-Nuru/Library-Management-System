@@ -140,4 +140,13 @@ The LMS software is dependent on the latest version of following libraries
 The LMS software is assumed to be used on a computer with enough performance ability, with an up-to-date internet browser. The LMS software might not work as intended if the computer does not have enough performance to support its backend, which may lead to performance and usability issues for the user. The user is also assumed to complete a training session by going through the manual and video associated with the software so as to be able to use it effectively and efficiently.
 
 
+## 3.	External Interface Requirements
+### 3.1	User Interfaces
+Registration Interface: If a user is not registered to the application, they can register themselves by using the sign up function. In which they have to submit university Id, choose password and mobile number.
+
+Login Interface: The users can sign in to their respective accounts with correct username and password. In case, if the password is incorrect they will not be able to log in.
+
+Admin Interface: In this interface, the administrator can add, issue, return and manage books. The admin can also remind the user about their book return dates.
+
+Search Interface: The user can search for the books by the book name/author/genre. If the searched item is available in records then it will get displayed. Linear search function is used for searching operation.
 
