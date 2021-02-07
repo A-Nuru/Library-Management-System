@@ -38,6 +38,33 @@ def stu_self_in():
 
 
 
+##################        CHECKING IF THE USERNAME ALREADY EXISTS BEFORE REGISTRATION          ##############
+
+
+def Stu_self_register():
+    global unames,pws,phs
+    
+    unames = stu_unames.get()
+    pws = stu_pws.get()
+    phs = stu_phs.get()
+
+    conn0 = sqlite3.connect("Student.db")
+    cursor0 = conn0.cursor()
+    cursor0.execute("CREATE TABLE IF NOT EXISTS login (username TEXT , password TEXT, mobile_no TEXT)")
+    cursor0.execute('select username from login')
+
+    s=[]
+    
+    for row in cursor0:
+        if row[0] == unames:
+            s.append(row[0])
+    
+    if len(s)>=1:
+        messagebox.showinfo('Error', 'Username Already Exists, Choose Another One!')
+        s.clear()
+    else:
+        stu_self_in()
+
 
 ################          ADDING THE REGISTRATION DETAILS INTO DATABSE         ################
 
