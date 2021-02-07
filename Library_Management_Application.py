@@ -20,6 +20,23 @@ from twilio.rest import Client
 
 
 
+##################        ADDING THE REGISTRATION DETAILS INTO DATABSE FOR USERS REGISTERING BY THEMSELVES        #######################
+
+
+def stu_self_in():
+    
+    conn0 = sqlite3.connect("Student.db")
+    cursor0 = conn0.cursor()
+    
+    if (unames and pws and phs)=='':
+        messagebox.showinfo('Error', 'Fields cannot be empty')
+    else:
+        cursor0.execute("INSERT INTO login (username, password,mobile_no) VALUES(?,?,?)",(unames,pws,phs))
+        conn0.commit()
+        messagebox.showinfo("Success","Registered Successfully")
+        show_frame(frame1)
+
+
 
 
 ################          ADDING THE REGISTRATION DETAILS INTO DATABSE         ################
