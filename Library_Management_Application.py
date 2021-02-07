@@ -34,6 +34,39 @@ def stu_in():
         show_frame(frame3)
 
 
+
+
+##################        CHECKING IF THE USERNAME ALREADY EXISTS BEFORE REGISTRATION          ##############
+
+
+
+def Stu_register():
+    global uname,pw,ph
+    
+    uname = stu_uname.get()
+    pw = stu_pw.get()
+    ph = stu_ph.get()
+
+    conn0 = sqlite3.connect("Student.db")                                          #        THIS BLOCK IS ACCESSED WHEN ADMIN WANTS TO ADD NEW MEMBERS
+    cursor0 = conn0.cursor()
+    cursor0.execute("CREATE TABLE IF NOT EXISTS login (username TEXT , password TEXT, mobile_no TEXT)")
+    cursor0.execute('select username from login')
+
+    s=[]
+    
+    for row in cursor0:
+        if row[0] == uname:
+            s.append(row[0])
+            
+    if len(s)>=1:
+        messagebox.showinfo('Error', 'Username Already Exists, Choose Another One!')
+        s.clear()
+    else:
+        stu_in()
+
+
+
+
 ##################          STUDENT LOGIN DATABASE           ##############
 
 def student_Database():
