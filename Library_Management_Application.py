@@ -222,7 +222,7 @@ def Frame5a():
     stu_phs = StringVar()
     Entry(frame5a, textvariable = stu_phs).place(x=280,y=250)
 
-    Button(frame5a, text = 'Submit',font = ('times',15,'bold italic'),bg = '#FFFFFF').place(x=300,y=300)
+    Button(frame5a, text = 'Submit', command=Stu_self_register,font = ('times',15,'bold italic'),bg = '#FFFFFF').place(x=300,y=300)
 
     Button(frame5a, text = 'Back', command = Frame1, font = ('times',15,'bold italic'),bg = '#FFFFFF').place(x=220,y=300)
 
