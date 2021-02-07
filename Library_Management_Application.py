@@ -16,6 +16,12 @@ from twilio.rest import Client
 
 
 
+
+
+
+
+
+
 ################          ADDING THE REGISTRATION DETAILS INTO DATABSE         ################
 
 
@@ -198,7 +204,7 @@ def Frame5():
     stu_ph=StringVar()
     Entry(frame5, textvariable = stu_ph).place(x=280,y=250)
 
-    Button(frame5, text = 'Submit', font = ('times',15,'bold italic')).place(x=300,y=300)
+    Button(frame5, text = 'Submit', command = Stu_register,font = ('times',15,'bold italic')).place(x=300,y=300)
 
     Button(frame5, text = 'Back', command = Frame3,font = ('times',15,'bold italic')).place(x=220,y=300)
 
