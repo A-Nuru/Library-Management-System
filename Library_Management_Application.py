@@ -16,11 +16,22 @@ from twilio.rest import Client
 
 
 
+################          ADDING THE REGISTRATION DETAILS INTO DATABSE         ################
 
 
-
-
-
+    
+def stu_in():
+    
+    conn0 = sqlite3.connect("Student.db")
+    cursor0 = conn0.cursor()
+    
+    if (uname and pw and ph)=='':
+        messagebox.showinfo('Error', 'Fields cannot be empty')                           #      THIS BLOCK IS ACCESSED WHEN ADMIN WANTS TO ADD NEW MEMBERS
+    else:
+        cursor0.execute("INSERT INTO login (username, password,mobile_no) VALUES(?,?,?)",(uname,pw,ph))
+        conn0.commit()
+        messagebox.showinfo("Success","Registered Successfully")
+        show_frame(frame3)
 
 
 ##################          STUDENT LOGIN DATABASE           ##############
@@ -128,7 +139,7 @@ def Frame5a():
     stu_phs = StringVar()
     Entry(frame5a, textvariable = stu_phs).place(x=280,y=250)
 
-    Button(frame5a, text = 'Submit',command = Stu_self_register,font = ('times',15,'bold italic'),bg = '#FFFFFF').place(x=300,y=300)
+    Button(frame5a, text = 'Submit',font = ('times',15,'bold italic'),bg = '#FFFFFF').place(x=300,y=300)
 
     Button(frame5a, text = 'Back', command = Frame1, font = ('times',15,'bold italic'),bg = '#FFFFFF').place(x=220,y=300)
 
@@ -154,7 +165,7 @@ def Frame5():
     stu_ph=StringVar()
     Entry(frame5, textvariable = stu_ph).place(x=280,y=250)
 
-    Button(frame5, text = 'Submit',font = ('times',15,'bold italic')).place(x=300,y=300)
+    Button(frame5, text = 'Submit', font = ('times',15,'bold italic')).place(x=300,y=300)
 
     Button(frame5, text = 'Back', command = Frame3,font = ('times',15,'bold italic')).place(x=220,y=300)
 
