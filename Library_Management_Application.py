@@ -300,6 +300,8 @@ def Frame4():
     book_location=StringVar()
     Entry(frame4, textvariable = book_location).place(x=280,y=350)
 
+    Button(frame4, text = 'Back', command = Frame3, font = ('times',15,'bold italic'),bg = '#ffedf9').place(x=200,y=425)
+
 
     
 
