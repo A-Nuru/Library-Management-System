@@ -162,6 +162,8 @@ def books_database():
         Location text not null)'''))
     print('Table Created')
     
+    Frame4()
+    
 
 
 
@@ -431,8 +433,9 @@ frame1 = Frame(root)
 frame2 = Frame(root)
 frame2a = Frame(root)
 frame3 = Frame(root)
+frame4 = Frame(root)
 
-for frame in (frame1,frame2,frame2a, frame3):
+for frame in (frame1,frame2,frame2a, frame3, frame4):
     frame.place(relheight=1,relwidth=1)
 
 
