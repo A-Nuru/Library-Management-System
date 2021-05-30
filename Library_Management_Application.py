@@ -161,6 +161,7 @@ def books_database():
         Copies text not null,
         Location text not null)'''))
     print('Table Created')
+    
 
 
 
@@ -309,7 +310,7 @@ def Frame4():
 def Frame3():
     show_frame(frame3)
     
-    Button(frame3, text = 'Add Book', font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=500,y=100)
+    Button(frame3, text = 'Add Book', command = books_database, font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=500,y=100)
     Button(frame3, text = 'Add Members', font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=500,y=170)
     Button(frame3, text = 'Issue Book', font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=500,y=240)
     Button(frame3, text = 'Check Record', font = ('times',15,'bold italic'),bg='#FFFFFF').place(x=500,y=310)
