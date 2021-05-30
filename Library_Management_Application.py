@@ -167,6 +167,8 @@ def insert_books():
         values(?,?,?,?,?)',(bookname,bookauthor,bookgenre,bookcopies,bookloc))
         conn1.commit()
         messagebox.showinfo("Success","Book added successfully")
+
+        show_frame(frame3)
         
 
 
@@ -326,7 +328,7 @@ def Frame4():
     book_location=StringVar()
     Entry(frame4, textvariable = book_location).place(x=280,y=350)
 
-    Button(frame4, text = 'Submit', font = ('times',15,'bold italic'),bg = '#ffedf9').place(x=300,y=425)
+    Button(frame4, text = 'Submit', command = insert_books, font = ('times',15,'bold italic'),bg = '#ffedf9').place(x=300,y=425)
     Button(frame4, text = 'Back', command = Frame3, font = ('times',15,'bold italic'),bg = '#ffedf9').place(x=200,y=425)
 
 
