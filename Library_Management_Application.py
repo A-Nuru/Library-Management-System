@@ -147,6 +147,21 @@ def admin_Database():
     login()
 
 
+##################        BOOKS DETAILS DATABASE         ##############
+
+        
+def books_database():
+    global conn1, cursor1
+    conn1 = sqlite3.connect('books.db')
+    cursor1 = conn1.cursor()
+    cursor1.execute((''' create table if not exists book
+        (Name text not null,
+        Author text not null,
+        Genre text not null,
+        Copies text not null,
+        Location text not null)'''))
+    print('Table Created')
+
 
 
 
