@@ -147,6 +147,32 @@ def admin_Database():
     login()
 
 
+
+
+##################        INSERT BOOK INTO DATABASE         ##############
+
+
+
+def insert_books():
+    bookname = book_name.get()
+    bookauthor = book_author.get()
+    bookgenre = book_genre.get()
+    bookcopies = book_copies.get()
+    bookloc = book_location.get()
+
+    if (bookname and bookauthor and bookgenre  and bookcopies and bookloc)=="":
+        messagebox.showinfo("Error","Fields cannot be empty.")
+    else:
+        cursor1.execute('insert into book(Name,Author,Genre,Copies,Location) \
+        values(?,?,?,?,?)',(bookname,bookauthor,bookgenre,bookcopies,bookloc))
+        conn1.commit()
+        messagebox.showinfo("Success","Book added successfully")
+        
+
+
+
+
+
 ##################        BOOKS DETAILS DATABASE         ##############
 
         
