@@ -270,6 +270,39 @@ def Frame5():
 
 
 
+    ##################                          FRAME-4  (ADDING BOOK PAGE)                       ##############
+
+
+def Frame4():
+    show_frame(frame4)
+    global book_name,book_author,book_genre,book_copies,book_location
+    
+    Label(frame4, text = 'Book Name : ',font = ('times',15,'bold italic'),bg = '#FFFFE0').place(x=100,y=150)
+    book_name=StringVar()
+    Entry(frame4, textvariable = book_name).place(x=280,y=150)
+
+    Label(frame4, text = 'Author : ',font = ('times',15,'bold italic'),bg = '#FFFFE0').place(x=100,y=200)
+    book_author=StringVar()
+    Entry(frame4, textvariable = book_author).place(x=280,y=200)
+
+    Label(frame4, text = 'Genre : ',font = ('times',15,'bold italic'),bg = '#FFFFE0').place(x=100,y=250)
+    book_genre=StringVar()
+    Entry(frame4, textvariable = book_genre).place(x=280,y=250)
+
+    Label(frame4, text = 'Copies : ',font = ('times',15,'bold italic'),bg = '#FFFFE0').place(x=100,y=300)
+    book_copies=StringVar()
+    Entry(frame4, textvariable = book_copies).place(x=280,y=300)
+
+    Label(frame4, text = 'Location : ',font = ('times',15,'bold italic'),bg = '#FFFFE0').place(x=100,y=350)
+    book_location=StringVar()
+    Entry(frame4, textvariable = book_location).place(x=280,y=350)
+
+
+    
+
+
+
+
 ##################                          FRAME-3  (ADMIN OPERATIONS)                       ##############
 
     
