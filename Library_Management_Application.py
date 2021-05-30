@@ -141,7 +141,7 @@ def admin_Database():
     cursor = conn.cursor()
     cursor.execute("CREATE TABLE IF NOT EXISTS login (username TEXT , password TEXT, mobile_no TEXT)")
     cursor.execute('DELETE FROM login')
-    cursor.execute("INSERT INTO login (username, password, mobile_no) VALUES('uellibrary', 'uel123',+447727161208)")
+    cursor.execute("INSERT INTO login (username, password, mobile_no) VALUES('uel', '123',+447727161208)")
     conn.commit()
     
     login()
