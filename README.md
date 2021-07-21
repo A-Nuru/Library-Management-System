@@ -10,4 +10,7 @@ information of a particular library is stored on a central database.
 (In case a user fail to return the book within the given time period). This is a user friendly application that aids
 book circulation and transaction monitoringin a library.
 
+## Conclusion
 
+This application makes it easy for all the users to search for the available books along with their precise location inside the 
+library. It makes the process of issuing and returning a book easier and quicker.
