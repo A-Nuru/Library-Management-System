@@ -9,6 +9,7 @@ information of a particular library is stored on a central database.
 - The stored information include user details, book details, available books, book issue and return dates, and fine
 (In case a user fail to return the book within the given time period). This is a user friendly application that aids
 book circulation and transaction monitoringin a library.
+- Use an Agile method of software development
 
 Home page
 ![image](https://user-images.githubusercontent.com/45924101/135244032-17172e1a-cf2a-4f07-aa2a-f0badc38965b.png)
